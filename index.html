@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inputs</title>
+</head>
+
+<body>
+  <h1>Inputs</h1>
+
+  <h3>Dimensions:</h3>
+
+  <label for="w">Width (%): </label>
+  <input type="range" id="w" value="100" oninput="updateOutput()">
+  <output id="w-output">100%</output>
+  <br>
+  <label for="h">Height (%): </label>
+  <input type="range" id="h" value="100" oninput="updateOutput()">
+  <output id="h-output">100%</output>
+
+  <script src="slider.js"></script>
+</body>
+
+</html>
