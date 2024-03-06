@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
-</head>
-
-<body>
-
-  <br>
-  <img id="input" src="bike.jpg" />
-  <img id="preview" src="" />
-  <script src="resize.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Image Forge</h1>
+        <input type="file" id="image" accept="image/*" class="hidden" />
+        <button id="button">Upload Image</button>
+        <h3>Scale Image</h3>
+        <table>
+          <tr>
+            <td>Height : </td>
+            <td><input type="number" name="height" id="height"></td>
+          </tr>
+          <tr>
+            <td>Width : </td>
+            <td><input type="number" name="width" id="width"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="scale">Scale</button></td>
+          </tr>
+        </table>
+        <button id="save">Save As</button>
+      </section>
+      <canvas id="imageManipulaiton" width="650" height="500"></canvas>
+    </main>
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
 </html>
