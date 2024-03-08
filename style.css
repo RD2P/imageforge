@@ -32,6 +32,10 @@ section div{
   margin: .3em 0;
 }
 
+td {
+  padding:5px
+}
+
 canvas{
   border: 1px solid #333;
 }
